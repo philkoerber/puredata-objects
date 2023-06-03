@@ -1,0 +1,45 @@
+#N canvas 1043 200 772 762 10;
+#X obj 171 257 mtof;
+#X obj 11 91 cnv 15 298 95 empty empty stimmer. 142 80 2 45 -166365
+-202263 0;
+#X obj 20 108 hradio 23 1 0 12 empty empty empty 0 -8 2 17 -95764 -198167
+-2339 0;
+#X text 27 130 C;
+#X text 44 91 Cis;
+#X text 90 91 Dis;
+#X text 71 130 D;
+#X text 114 131 E;
+#X text 142 131 F;
+#X text 160 91 Fis;
+#X text 188 132 G;
+#X text 206 91 Gis;
+#X text 232 130 A;
+#X text 257 91 B;
+#X text 280 130 H;
+#X obj 23 146 hsl 128 15 0 127 0 0 empty empty ~lautstärke~ 13 24
+2 20 -95771 -194071 -95771 0 0;
+#X obj 173 282 phasor~;
+#X obj 173 306 *~ 2;
+#X obj 175 367 abs~;
+#X obj 343 535 *~;
+#X obj 175 337 -~ 1;
+#X obj 170 473 dac~;
+#X obj 177 422 *~;
+#X obj 95 342 line~;
+#X msg 95 318 \$1 10;
+#X obj 171 230 + 48;
+#X obj 171 446 *~ 0.006;
+#X connect 0 0 16 0;
+#X connect 2 0 25 0;
+#X connect 15 0 24 0;
+#X connect 16 0 17 0;
+#X connect 17 0 20 0;
+#X connect 18 0 22 0;
+#X connect 20 0 18 0;
+#X connect 22 0 26 0;
+#X connect 23 0 22 1;
+#X connect 24 0 23 0;
+#X connect 25 0 0 0;
+#X connect 26 0 21 0;
+#X connect 26 0 21 1;
+#X coords 0 0 1 1 300 97 2 10 90;

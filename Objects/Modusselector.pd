@@ -1,0 +1,52 @@
+#N canvas 1211 123 250 351 10;
+#X obj 103 316 outlet;
+#X obj 14 94 bng 20 250 50 0 empty empty Modus_I 27 7 1 10 -174627
+-262144 -1;
+#X obj 14 117 bng 20 250 50 0 empty empty Modus_II 27 7 1 10 -141726
+-262144 -1;
+#X obj 14 140 bng 20 250 50 0 empty empty Modus_III 27 7 1 10 -121251
+-262144 -1;
+#X obj 14 163 bng 20 250 50 0 empty empty Modus_VI 27 7 1 10 -120998
+-262144 -1;
+#X obj 14 186 bng 20 250 50 0 empty empty Modus_V 27 7 1 10 -124774
+-262144 -1;
+#X obj 14 209 bng 20 250 50 0 empty empty Modus_IV 27 7 1 10 -153383
+-262144 -1;
+#X obj 14 232 bng 20 250 50 0 empty empty Modus_IIV 27 7 1 10 -153438
+-262144 -1;
+#X obj 15 39 sel 1 2 3 4 5 6 7;
+#X obj 15 16 inlet;
+#X obj 114 82 loadbang;
+#X obj 114 130 print Modusselector;
+#X msg 114 108 part of DMmbT;
+#X msg 105 158 set mi;
+#X msg 110 176 set mii;
+#X msg 120 193 set miii;
+#X msg 132 214 set mvi;
+#X msg 141 235 set mv;
+#X msg 153 254 set miv;
+#X msg 168 277 set miiv;
+#X connect 1 0 13 0;
+#X connect 2 0 14 0;
+#X connect 3 0 15 0;
+#X connect 4 0 16 0;
+#X connect 5 0 17 0;
+#X connect 6 0 18 0;
+#X connect 7 0 19 0;
+#X connect 8 0 1 0;
+#X connect 8 1 2 0;
+#X connect 8 2 3 0;
+#X connect 8 3 4 0;
+#X connect 8 4 5 0;
+#X connect 8 5 6 0;
+#X connect 8 6 7 0;
+#X connect 9 0 8 0;
+#X connect 10 0 12 0;
+#X connect 12 0 11 0;
+#X connect 13 0 0 0;
+#X connect 14 0 0 0;
+#X connect 15 0 0 0;
+#X connect 16 0 0 0;
+#X connect 18 0 0 0;
+#X connect 19 0 0 0;
+#X coords 0 0 1 1 80 166 2 10 90;
